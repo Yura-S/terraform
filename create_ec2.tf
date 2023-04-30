@@ -1,7 +1,7 @@
 resource "aws_instance" "tf_instance" {
-  ami           = "ami-0a695f0d95cefc163"
+  ami           = "ami-007855ac798b5175e"
   instance_type = "t2.micro"
-  key_name      = "TfKeyPair"
+  key_name      = "MyKeyPair"
 
   subnet_id                   = aws_subnet.tf_public_subnet.id
   vpc_security_group_ids      = [aws_security_group.tf_sg.id]
